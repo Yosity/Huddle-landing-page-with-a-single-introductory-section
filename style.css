@@ -1,0 +1,145 @@
+body {
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(257, 40%, 49%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 8% 8%;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap : 4rem;
+    min-width: 250px;
+    
+}
+.imgs-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    width: 100%;
+}
+.huddle {
+        width: 45%;
+        text-align: center;
+
+}
+.huddle img {
+    width: 100%;
+    object-fit: fill;
+
+}
+.mockups {
+    width: 100%;
+    
+}
+.mockups img {
+    width: 100%;
+    object-fit: fill;
+}
+@media (min-width:800px) {
+    body {
+        text-align: start;
+        background-image: url("images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+    }
+    main {
+        grid-template-columns: 2fr 2fr ;
+        width: 100%;
+        position: relative;
+    }
+
+   
+}
+
+article {
+    max-width: 700px;
+}
+article h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+article p {
+    font-size: 17px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+article button {
+    color: hsl(257, 40%, 49%);
+    font-weight: bold;
+    max-width: 15rem;
+    width: 15rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+article button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color:  white;
+}
+article button:active {
+    background-color: hsla(300, 66%, 41%, 0.589);
+    
+}
+@media (min-width: 800px){
+    article {
+        align-self: center;    
+    }
+    article h1 {
+        font-size: 35px;
+    }
+    article button {
+        min-width: 180px;
+        width: 10rem;
+    }
+}
+
+.icons-container {
+    width: 10rem;
+    margin:  auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.icons-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 2rem;
+    
+    cursor: pointer;
+}
+.icons-container i {
+
+    font-size: 18px;
+    
+
+}
+.icons-container div:hover {
+    color: hsl(300, 78%, 65%);
+    border-color: hsl(300, 78%, 65%);
+}
+@media (min-width: 800px){
+    .icons-container {
+        position: absolute;
+        bottom: -5rem;
+        right: 5rem;
+        
+    }
+}
